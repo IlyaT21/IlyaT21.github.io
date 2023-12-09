@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="app.css">
-	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="./assets/style.css">
+	<title>Ilija Tošković</title>
 </head>
-
 <body>
-	<main>
-		<h1>
-			Player <span id="currPlayer">o</span> Turn
-		</h1>
-		<div class="user-info">
-			<!-- For future use -->
-			<!-- <input type="text" name="username" id="username" placeholder="Input Your Name"> -->
-			<!-- <button id="save name">Submit</button> -->
-			<h2 id="result"></h2>
-		</div>
-		<div class="playing-field">
-			<button class="field" id="a1" data-check=""></button>
-			<button class="field" id="b1" data-check=""></button>
-			<button class="field" id="c1" data-check=""></button>
-			<button class="field" id="a2" data-check=""></button>
-			<button class="field" id="b2" data-check=""></button>
-			<button class="field" id="c2" data-check=""></button>
-			<button class="field" id="a3" data-check=""></button>
-			<button class="field" id="b3" data-check=""></button>
-			<button class="field" id="c3" data-check=""></button>
-		</div>
-		<div class="score">
-			<button id="replayBtn">Replay?</button>
-		</div>
+	<main id="main" class="main">
+		<section id="hero-section" class="hero-section">
+			<div class="content-holder">
+				<h1 data-value="Hello There">Hello There</h1>
+				<div class="info-holder">
+					<p>
+						<span id="first-span" data-value="I'm Ilija,">
+							I'm Ilija,
+						</span>
+						<br>
+						<span id="second-span" data-value="Nice to meet you.">
+							Nice to meet you.
+						</span>
+					</p>
+					<nav class="nav">
+						<a href="#about-section">About me</a>
+						<a href="#projects-section">Projects</a>
+						<a href="#experience">Experience</a>
+						<a href="#contact-section">Contact me</a>
+					</nav>
+				</div>
+			</div>
+		</section>
 	</main>
-	<script src="app.js"></script>
+	<script src="./assets/script.js"></script>
 </body>
-
 </html>
