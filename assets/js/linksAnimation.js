@@ -14,7 +14,9 @@ siteLinks.forEach(function (link) {
 
 		setTimeout(function () {
 			window.location.href = link.href;
-			loadModalWrap.classList.remove('move-right');
+			setTimeout(function () {
+				loadModalWrap.classList.remove('move-right');
+			}, 200);
 		}, 600);
 	});
 });
@@ -22,11 +24,6 @@ siteLinks.forEach(function (link) {
 window.addEventListener('pageshow', function (event) {
 
   if (event.persisted) {
-    // This indicates that the page is being loaded from the cache
-    // You can perform any necessary actions here
-    console.log('Page is being loaded from cache');
-    
-    // Simulate a full page reload
     window.location.reload(true);
   }
 });
