@@ -14,9 +14,9 @@ siteLinks.forEach(function (link) {
 
 		setTimeout(function () {
 			window.location.href = link.href;
-			setTimeout(function () {
-				loadModalWrap.classList.remove('move-right');
-			}, 200);
+			// setTimeout(function () {
+			// 	loadModalWrap.classList.remove('move-right');
+			// }, 200);
 		}, 600);
 	});
 });
